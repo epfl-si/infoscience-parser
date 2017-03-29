@@ -45,24 +45,3 @@ for r in records:
     for author in r.authors:
         print(author.name)
 
-
-'''
-import requests
-import metadata_parser
-
-r = requests.get("https://infoscience.epfl.ch/oai2d?verb=ListRecords&metadataPrefix=oai_dc&set=article&from=2017-03-27")
-
-c = r.content
-
-import xml.etree.ElementTree
-e = xml.etree.ElementTree.parse(c)
-
-for atype in e.findall('record'):
-    print(atype)
-
-page = metadata_parser.MetadataParser(html=content)
-print(page.metadata)
-print(page.get_field('title'))
-print(page.get_field('title', strategy=['og',]))
-print(page.get_field('title', strategy=['page', 'og', 'dc',]))*/
-'''
