@@ -1,5 +1,11 @@
-import urllib.request, copy
-c = urllib.request.urlopen("https://infoscience.epfl.ch/search?cc=Infoscience%2FResearch%2FENAC&ln=fr&as=1&ext=collection%3AARTICLE&rg=50&of=t&ot=001,700,245")
+try:
+    # python 3
+    from urllib.request import urlopen
+except:
+    # python 2.7
+    from urllib2 import urlopen
+
+c = urlopen("https://infoscience.epfl.ch/search?cc=Infoscience%2FResearch%2FENAC&ln=fr&as=1&ext=collection%3AARTICLE&rg=50&of=t&ot=001,700,245")
 
 class Record:
     def __init__(self, id="", title=""):
