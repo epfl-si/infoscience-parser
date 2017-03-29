@@ -27,3 +27,6 @@ optional arguments:
  ```
 
  the URL is one of the Infoscience API
+
+ 
+(c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017
