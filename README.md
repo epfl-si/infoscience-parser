@@ -28,5 +28,18 @@ optional arguments:
 
  the URL is one of the Infoscience API
 
+
+### How do I check that everything went well ?
+
+Run the test
+
+```
+$ python test.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.014s
+
+OK
+```
  
 (c) All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017
